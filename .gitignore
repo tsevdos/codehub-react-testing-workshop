@@ -1,5 +1,6 @@
 node_modules
 dist
+coverage
 
 app/examples/01/wordCount-solution.js
 app/examples/02/isLeap-solution.js
