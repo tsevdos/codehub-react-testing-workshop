@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly with snapshot (mount) 1`] = `
+<App>
+  <div>
+    <CharacterList
+      data={
+        Array [
+          Object {
+            "gender": "male",
+            "name": "John Tsevdos",
+          },
+          Object {
+            "gender": "female",
+            "name": "Patricia Lebsack",
+          },
+          Object {
+            "gender": "male",
+            "name": "Dennis Schulist",
+          },
+        ]
+      }
+      onSelectCharacter={[Function]}
+    >
+      <div>
+        <h2>
+          My title
+        </h2>
+        <div
+          id="cards"
+        >
+          <div
+            className="card m-b"
+            key="John Tsevdos"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                John Tsevdos
+              </h5>
+              <p
+                className="card-text"
+              >
+                male
+              </p>
+              <button
+                className="btn btn-primary"
+                onClick={[Function]}
+              >
+                edit
+              </button>
+            </div>
+          </div>
+          <div
+            className="card m-b"
+            key="Patricia Lebsack"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                Patricia Lebsack
+              </h5>
+              <p
+                className="card-text"
+              >
+                female
+              </p>
+              <button
+                className="btn btn-primary"
+                onClick={[Function]}
+              >
+                edit
+              </button>
+            </div>
+          </div>
+          <div
+            className="card m-b"
+            key="Dennis Schulist"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                Dennis Schulist
+              </h5>
+              <p
+                className="card-text"
+              >
+                male
+              </p>
+              <button
+                className="btn btn-primary"
+                onClick={[Function]}
+              >
+                edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </CharacterList>
+  </div>
+</App>
+`;
+
+exports[`<App /> renders correctly with snapshot (shallow) 1`] = `
+<div>
+  <CharacterList
+    data={
+      Array [
+        Object {
+          "gender": "male",
+          "name": "John Tsevdos",
+        },
+        Object {
+          "gender": "female",
+          "name": "Patricia Lebsack",
+        },
+        Object {
+          "gender": "male",
+          "name": "Dennis Schulist",
+        },
+      ]
+    }
+    onSelectCharacter={[Function]}
+  />
+</div>
+`;
