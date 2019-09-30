@@ -5,6 +5,8 @@ import WordCountApp from "./examples/01/WordCountApp";
 import LeapYearApp from "./examples/02/LeapYearApp";
 import TestingApp from "./examples/03/App";
 import TestingApp2 from "./examples/04/App";
+import TodoApp from "./examples/05/index";
+
 import "./app.css";
 
 ReactDOM.render(
@@ -22,7 +24,9 @@ ReactDOM.render(
               <NavLink to="/02" className="nav-link">
                 02
               </NavLink>
-              <h5>Enzyme testing</h5>
+            </nav>
+            <h5>Enzyme testing</h5>
+            <nav>
               <NavLink to="/03" className="nav-link">
                 03
               </NavLink>
@@ -30,17 +34,25 @@ ReactDOM.render(
                 04
               </NavLink>
             </nav>
+            <h5>React testing library</h5>
+            <nav>
+              <NavLink to="/05" className="nav-link">
+                05
+              </NavLink>
+            </nav>
           </aside>
         </div>
         <div className="col-9">
           <h1>Testing</h1>
           <br />
-          {/* JS testing */}
+          {/* Unit testing */}
           <Route exact path="/01" component={WordCountApp} />
           <Route exact path="/02" component={LeapYearApp} />
-          {/* Unit testing */}
+          {/* Enzyme testing */}
           <Route exact path="/03" component={TestingApp} />
           <Route exact path="/04" component={TestingApp2} />
+          {/* React testing library */}
+          <Route exact path="/05" component={TodoApp} />
         </div>
       </div>
     </div>
