@@ -32,6 +32,7 @@ export class TodoApp extends Component {
         <form onSubmit={this.addToDo}>
           Add ToDo:{" "}
           <input
+            data-testid="addTodo"
             value={input}
             onChange={e => this.props.updateInput(e.target.value)}
             type="text"

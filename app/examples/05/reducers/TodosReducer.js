@@ -1,39 +1,39 @@
 import { ADD_TODO, TOGGLE_TODO } from "../constants/todosTypes";
 
-const initialState = [
+export const initialState = [
   {
     id: 1,
     title: "Learn React",
-    done: false,
+    done: false
   },
   {
     id: 2,
     title: "Go to Code.Hub",
-    done: true,
+    done: true
   },
   {
     id: 3,
     title: "Go out for a drink",
-    done: false,
-  },
+    done: false
+  }
 ];
 
 export default (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-  case ADD_TODO:
-    return [...state, payload];
-  case TOGGLE_TODO:
-    const newState = state.map((todo) => {
-      if (todo.id === payload) {
-        return { ...todo, done: !todo.done };
-      }
-      return todo;
-    });
+    case ADD_TODO:
+      return [...state, payload];
+    case TOGGLE_TODO:
+      const newState = state.map(todo => {
+        if (todo.id === payload) {
+          return { ...todo, done: !todo.done };
+        }
+        return todo;
+      });
 
-    return [...newState];
-  default:
-    return state;
+      return [...newState];
+    default:
+      return state;
   }
 };
