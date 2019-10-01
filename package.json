@@ -10,6 +10,8 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "test:e2e": "cypress run --reporter teamcity",
+    "test:e2e:UI": "cypress open",
     "test:coverage": "jest --coverage"
   },
   "author": "John Tsevdos <tsevdosjohn@gmail.com> (http://tsevdos.me/)",
@@ -34,6 +36,7 @@
     "babel-loader": "8.0.6",
     "babel-polyfill": "6.26.0",
     "css-loader": "3.2.0",
+    "cypress": "3.4.1",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
     "enzyme-to-json": "3.4.0",
