@@ -22,18 +22,18 @@ export default (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case ADD_TODO:
-      return [...state, payload];
-    case TOGGLE_TODO:
-      const newState = state.map(todo => {
-        if (todo.id === payload) {
-          return { ...todo, done: !todo.done };
-        }
-        return todo;
-      });
+  case ADD_TODO:
+    return [...state, payload];
+  case TOGGLE_TODO:
+    const newState = state.map(todo => {
+      if (todo.id === payload) {
+        return { ...todo, done: !todo.done };
+      }
+      return todo;
+    });
 
-      return [...newState];
-    default:
-      return state;
+    return [...newState];
+  default:
+    return state;
   }
 };

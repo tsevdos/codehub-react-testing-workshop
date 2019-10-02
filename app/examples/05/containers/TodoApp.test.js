@@ -1,5 +1,5 @@
 import React from "react";
-import { render, rerender, cleanup, fireEvent } from "@testing-library/react";
+import { render, cleanup, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import { TodoApp } from "./TodoApp";
 import { initialState } from "../reducers/TodosReducer";
@@ -74,7 +74,7 @@ describe("<TodoApp>", () => {
 
   it("runs correctly the updateInput callback", () => {
     const mockAddToDo = jest.fn();
-    const { container, debug } = render(
+    const { container } = render(
       <TodoApp
         todos={initialState}
         input="My new Todo"

@@ -24,6 +24,18 @@ Test in watch mode:
 npm run test:watch
 ```
 
+Test end to end tests:
+
+```
+npm run test:e2e
+```
+
+Test end to end tests (UI):
+
+```
+npm run test:e2e:UI
+```
+
 Generate test coverage:
 
 ```
