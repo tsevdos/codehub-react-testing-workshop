@@ -6,6 +6,7 @@ import LeapYearApp from "./examples/02/LeapYearApp";
 import TestingApp from "./examples/03/App";
 import TestingApp2 from "./examples/04/App";
 import TodoApp from "./examples/05/index";
+import Input from "./examples/06/Input";
 
 import "./app.css";
 
@@ -40,6 +41,11 @@ ReactDOM.render(
                 05
               </NavLink>
             </nav>
+            <nav>
+              <NavLink to="/06" className="nav-link">
+                06
+              </NavLink>
+            </nav>
           </aside>
         </div>
         <div className="col-9">
@@ -53,6 +59,7 @@ ReactDOM.render(
           <Route exact path="/04" component={TestingApp2} />
           {/* React testing library */}
           <Route exact path="/05" component={TodoApp} />
+          <Route exact path="/06" component={Input} />
         </div>
       </div>
     </div>

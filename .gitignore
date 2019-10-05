@@ -5,3 +5,4 @@ cypress/videos
 
 app/examples/01/wordCount-solution.js
 app/examples/02/isLeap-solution.js
+app/examples/06/Input.test-solution.js
