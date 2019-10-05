@@ -18,14 +18,14 @@ const data = [
 ];
 
 describe("<CharacterList />", () => {
-  it("renders correctly CharacterList title and subtitle", () => {
+  it("renders correctly CharacterList title", () => {
     const wrapper = shallow(<CharacterList data={data} />);
 
     expect(wrapper.exists()).toBe(true);
     expect(wrapper.find("h2").text()).toBe("My title");
   });
 
-  it("renders a list with 3 characters", () => {
+  it("renders a list with 3 cards", () => {
     const wrapper = shallow(<CharacterList data={data} />);
 
     expect(wrapper.find("#cards .card").length).toBe(3);

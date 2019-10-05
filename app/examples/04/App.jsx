@@ -13,7 +13,7 @@ const data = [
   {
     name: "Dennis Schulist",
     gender: "male"
-  },
+  }
 ];
 
 const App = () => (

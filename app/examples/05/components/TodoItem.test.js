@@ -16,10 +16,9 @@ describe("<TodoItem>", () => {
     expect(todo).toBeVisible();
     expect(todo).toContainHTML("Master React");
     expect(todo.querySelector("span")).toBeTruthy();
-    expect(todo.querySelector("span").textContent).toBe("Master React");
   });
 
-  it("strike trhrough if is done", () => {
+  it("strike through if is done", () => {
     const { getByTestId } = render(
       <TodoItem id={1} title="Master Redux" done toggleTodo={() => {}} />
     );
@@ -29,7 +28,6 @@ describe("<TodoItem>", () => {
     expect(todo).toBeVisible();
     expect(todo).toContainHTML("Master Redux");
     expect(todo.querySelector("strike")).toBeTruthy();
-    expect(todo.querySelector("strike").textContent).toBe("Master Redux");
   });
 
   it("handles correctly onChange", () => {

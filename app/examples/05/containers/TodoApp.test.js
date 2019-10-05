@@ -63,7 +63,6 @@ describe("<TodoApp>", () => {
         updateInput={mockUpdateInput}
       />
     );
-
     const input = getByTestId("addTodo");
 
     fireEvent.change(input, { target: { value: "My new Todo" } });
@@ -72,7 +71,7 @@ describe("<TodoApp>", () => {
     expect(mockUpdateInput).toBeCalledWith("My new Todo");
   });
 
-  it("runs correctly the updateInput callback", () => {
+  it("runs correctly the adds a ToDo item", () => {
     const mockAddToDo = jest.fn();
     const { container } = render(
       <TodoApp

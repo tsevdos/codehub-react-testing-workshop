@@ -8,6 +8,8 @@ describe("<Input>", () => {
 
   it("renders correctly", () => {
     const { container } = render(<Input placeholder="" value="" />);
+    const input = container.querySelector("input");
+
     // ...
   });
 
